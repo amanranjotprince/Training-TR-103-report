@@ -123,129 +123,6 @@
             background-color: #6b21a8;
             color: white;
         }
-
-        /* Modal Styles */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-
-        .modal-content {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            width: 90%;
-            max-width: 800px;
-            height: 80vh;
-            position: relative;
-        }
-
-        .modal-content iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        .close-btn {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            font-size: 24px;
-            cursor: pointer;
-            color: #6b21a8;
-            font-weight: bold; /* Added bold effect */
-            transition: color 0.3s ease, transform 0.2s ease; /* Added transition for hover effect */
-        }
-
-        .close-btn:hover {
-            color: #9333ea; /* Change color on hover */
-            transform: scale(1.2); /* Slightly enlarge on hover */
-        }
-
-        /* Responsive Design */
-        @media screen and (max-width: 768px) {
-            #main {
-                padding: 20px;
-                margin: 10px;
-            }
-
-            #main h1 {
-                font-size: 2rem;
-            }
-
-            #main p {
-                font-size: 1.1rem;
-            }
-
-            #main h2 {
-                font-size: 1.6rem;
-            }
-
-            #main img {
-                height: 100px;
-                width: 100px;
-            }
-
-            #navbar {
-                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-                gap: 8px;
-            }
-
-            #btn {
-                font-size: 0.9rem;
-                padding: 8px 15px;
-            }
-
-            .web a {
-                font-size: 1.2rem;
-                padding: 8px 15px;
-            }
-
-            .modal-content {
-                width: 95%;
-                height: 70vh;
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-            #main {
-                padding: 15px;
-            }
-
-            #main h1 {
-                font-size: 1.8rem;
-            }
-
-            #main p {
-                font-size: 1rem;
-            }
-
-            #main h2 {
-                font-size: 1.4rem;
-            }
-
-            #navbar {
-                grid-template-columns: 1fr;
-            }
-
-            #btn {
-                font-size: 0.85rem;
-                padding: 8px 12px;
-            }
-
-            .modal-content {
-                width: 98%;
-                height: 60vh;
-            }
-        }
     </style>
 </head>
 
@@ -258,101 +135,44 @@
         <p>By Amandeep Kaur, URN 2203395 <br> Guru Nanak Dev Engineering College Ludhiana</p>
         <h2>4 Week Training in</h2>
         <h2>MACHINE LEARNING</h2>
+
         <nav id="navbar">
-            <a href="#" data-pdf="https://amanranjotprince.github.io/Training-TR-103-report/Day1.ipynb"><button
-                    id="btn">Day 1</button></a>
-            <a href="#" data-pdf="https://amanranjotprince.github.io/Training-TR-103-report/DAY 2.pdf"><button
-                    id="btn">Day 2</button></a>
-            <a href="#" data-pdf="https://amanranjotprince.github.io/Training-TR-103-report/DAY 3.pdf"><button
-                    id="btn">Day 3</button></a>
-            <a href="#" data-pdf="https://amanranjotprince.github.io/Training-TR-103-report/DAY 4.pdf"><button
-                    id="btn">Day 4</button></a>
-            <a href="#" data-pdf="https://amanranjotprince.github.io/Training-TR-103-report/DAY 5.pdf"><button
-                    id="btn">Day 5</button></a>
-            <a href="#" data-pdf="https://amanranjotprince.github.io/Training-TR-103-report/DAY 6.pdf"><button
-                    id="btn">Day 6</button></a>
-            <a href="#" data-pdf="https://amanranjotprince.github.io/Training-TR-103-report/DAY 7.pdf"><button
-                    id="btn">Day 7</button></a>
-            <a href="#" data-pdf="https://amanranjotprince.github.io/Training-TR-103-report/DAY 8.pdf"><button
-                    id="btn">Day 8</button></a>
-            <a href="#" data-pdf="https://amanranjotprince.github.io/Training-TR-103-report/DAY 9.pdf"><button
-                    id="btn">Day 9</button></a>
-            <a href="#" data-pdf="https://amanranjotprince.github.io/Training-TR-103-report/DAY 10.pdf"><button
-                    id="btn">Day 10</button></a>
-            <a href="#" data-pdf="https://amanranjotprince.github.io/Training-TR-103-report/DAY 11.pdf"><button
-                    id="btn">Day 11</button></a>
-            <a href="#" data-pdf="https://amanranjotprince.github.io/Training-TR-103-report/DAY 12.pdf"><button
-                    id="btn">Day 12</button></a>
-            <a href="#" data-pdf="https://amanranjotprince.github.io/Training-TR-103-report/DAY 13.pdf"><button
-                    id="btn">Day 13</button></a>
-            <a href="#" data-pdf="https://amanranjotprince.github.io/Training-TR-103-report/DAY 14.pdf"><button
-                    id="btn">Day 14</button></a>
-            <a href="#" data-pdf="https://amanranjotprince.github.io/Training-TR-103-report/DAY 15.pdf"><button
-                    id="btn">Day 15</button></a>
-            <a href="#" data-pdf="https://amanranjotprince.github.io/Training-TR-103-report/DAY 16.pdf"><button
-                    id="btn">Day 16</button></a>
-            <a href="#" data-pdf="https://amanranjotprince.github.io/Training-TR-103-report/DAY 17.pdf"><button
-                    id="btn">Day 17</button></a>
-            <a href="#" data-pdf="https://amanranjotprince.github.io/Training-TR-103-report/DAY 18.pdf"><button
-                    id="btn">Day 18</button></a>
-            <a href="#" data-pdf="https://amanranjotprince.github.io/Training-TR-103-report/DAY 19.pdf"><button
-                    id="btn">Day 19</button></a>
-            <a href="#" data-pdf="https://amanranjotprince.github.io/Training-TR-103-report/DAY 20.pdf"><button
-                    id="btn">Day 20</button></a>
-            <a href="#" data-pdf="https://amanranjotprince.github.io/Training-TR-103-report/DAY 21.pdf"><button
-                    id="btn">Day 21</button></a>
-            <a href="#" data-pdf="https://amanranjotprince.github.io/Training-TR-103-report/DAY 22.pdf"><button
-                    id="btn">Day 22</button></a>
-            <a href="#" data-pdf="https://amanranjotprince.github.io/Training-TR-103-report/DAY 23.pdf"><button
-                    id="btn">Day 23</button></a>
-            <a href="#" data-pdf="https://amanranjotprince.github.io/Training-TR-103-report/DAY 24.pdf"><button
-                    id="btn">Day 24</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day1.ipynb" target="_blank"><button id="btn">Day 1</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day2.ipynb" target="_blank"><button id="btn">Day 2</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day3.ipynb" target="_blank"><button id="btn">Day 3</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day4.ipynb" target="_blank"><button id="btn">Day 4</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day5.ipynb" target="_blank"><button id="btn">Day 5</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day6.ipynb" target="_blank"><button id="btn">Day 6</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day7.ipynb" target="_blank"><button id="btn">Day 7</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day8.ipynb" target="_blank"><button id="btn">Day 8</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day9.ipynb" target="_blank"><button id="btn">Day 9</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day10.ipynb" target="_blank"><button id="btn">Day 10</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day11.ipynb" target="_blank"><button id="btn">Day 11</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day12.ipynb" target="_blank"><button id="btn">Day 12</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day13.ipynb" target="_blank"><button id="btn">Day 13</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day14.ipynb" target="_blank"><button id="btn">Day 14</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day15.ipynb" target="_blank"><button id="btn">Day 15</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day16.ipynb" target="_blank"><button id="btn">Day 16</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day17.ipynb" target="_blank"><button id="btn">Day 17</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day18.ipynb" target="_blank"><button id="btn">Day 18</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day19.ipynb" target="_blank"><button id="btn">Day 19</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day20.ipynb" target="_blank"><button id="btn">Day 20</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day21.ipynb" target="_blank"><button id="btn">Day 21</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day22.ipynb" target="_blank"><button id="btn">Day 22</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day23.ipynb" target="_blank"><button id="btn">Day 23</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day24.ipynb" target="_blank"><button id="btn">Day 24</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day25.ipynb" target="_blank"><button id="btn">Day 25</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day26.ipynb" target="_blank"><button id="btn">Day 26</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day27.ipynb" target="_blank"><button id="btn">Day 27</button></a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/Day28.ipynb" target="_blank"><button id="btn">Day 28</button></a>
+
         </nav>
+
         <div class="web">
-            <a href="https://amanranjotprince.github.io/Training-TR-103-report/PROJECT.html"
-                target="_blank">PROJECT!!!</a>
+            <a href="https://amanranjotprince.github.io/Training-TR-103-report/PROJECT.html" target="_blank">PROJECT!!!</a>
         </div>
     </section>
 
-    <!-- Modal for PDF Viewer -->
-    <div id="pdfModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">×</span>
-            <iframe id="pdfViewer" src=""></iframe>
-        </div>
-    </div>
-
-    <script>
-        // Get modal elements
-        const modal = document.getElementById('pdfModal');
-        const pdfViewer = document.getElementById('pdfViewer');
-        const closeBtn = document.querySelector('.close-btn');
-        const pdfLinks = document.querySelectorAll('#navbar a[data-pdf]');
-
-        // Add click event to each PDF link
-        pdfLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const pdfUrl = link.getAttribute('data-pdf');
-                pdfViewer.src = pdfUrl;
-                modal.style.display = 'flex';
-            });
-        });
-
-        // Close modal when close button is clicked
-        closeBtn.addEventListener('click', () => {
-            modal.style.display = 'none';
-            pdfViewer.src = ''; // Clear iframe src to stop loading
-        });
-
-        // Close modal when clicking outside the modal content
-        window.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                modal.style.display = 'none';
-                pdfViewer.src = ''; // Clear iframe src to stop loading
-            }
-        });
-    </script>
 </body>
 
 </html>
